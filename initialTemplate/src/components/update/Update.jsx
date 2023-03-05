@@ -32,6 +32,7 @@ export default function Update() {
                 className="formInput"
                 type="text"
                 placeholder="John"
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="formItem">
@@ -40,17 +41,14 @@ export default function Update() {
                 className="formInput"
                 type="text"
                 placeholder="john@gmail.com"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="formItem">
               <label>Password</label>
               <input className="formInput" type="password" />
             </div>
-            <button
-              className="updateButton"
-            >
-              Update
-            </button>
+            <button className="updateButton">Update</button>
           </form>
         </div>
       </div>
